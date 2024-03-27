@@ -1,0 +1,11 @@
+const username = "tanu";
+let mySuname = "tanu";
+mySuname = "nammo";
+let mySuname_2;
+var myName = "tanu";
+name = "kartikey";
+console.log(username);
+console.log(mySuname);
+console.log(myName);
+console.log(name);
+console.log(mySuname_2);
