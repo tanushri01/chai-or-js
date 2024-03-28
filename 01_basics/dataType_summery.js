@@ -39,4 +39,16 @@ const myFunction = function(){
 console.log(typeof heros,heros );
 console.log(typeof myObj,myObj );
 console.log(typeof myFunction, myFunction );
+/*memory allocation stack(primitive) heap(nonprimitive)
+*/
+let myname = "tanu";
+let mysurname = myname;
+mysurname = "soni"
+console.log(myname)
+console.log(mysurname)
 
+let array = [1,3,4]
+let newArray = array;
+newArray[3] = 5;
+console.log(array)
+console.log(newArray)
