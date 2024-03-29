@@ -47,3 +47,19 @@ const concateArray = array.concat(array2)
 const arraySum = [...array, ...array2]
 console.log(arraySum, "spread operator")
 console.log(concateArray, "concat")
+
+// Flattening a nested array up to a depth of 2
+const array4 = [1, 2, [11, 23, ['i', 'j'], 55], 3, 4];
+const newOne = array4.flat(2);
+console.log(newOne);
+
+// Checking if a value is an array
+console.log(Array.isArray("tanu")); // Output: false
+console.log(Array.from("tanu")); // Output: ["t", "a", "n", "u"]
+console.log(Array.from({'name' : "tanu"})); // Output: []
+
+// Creating an array from individual elements
+const score = 100;
+const score1 = 200;
+const score2 = 300;
+console.log(Array.of(score, score1, score2)); // Output: [100, 200, 300]
