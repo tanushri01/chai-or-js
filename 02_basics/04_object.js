@@ -47,3 +47,30 @@ console.log(array[0].mother);
 console.log(tinderUser);
 console.log(Object.values(tinderUser));
 console.log(Object.keys(tinderUser));
+
+
+// desturcturing in js
+const x = [1, 2, 3, 4, 5];
+const [y, z,  ...rest] = x;
+console.log(y)
+console.log(z)
+console.log(rest)
+
+const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+
+const{firstName : a, b,c,d} = person
+console.log(a)
+
+// from api data comes in the formet of json
+
+// {
+//   "name" : "tanu",
+//     "number": 11,
+//       "value" : false,
+// }
+
+// [
+//     {},
+//     {},
+//     {}
+// ]
