@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Changer</title>
+  <style>
+h1{
+  text-align: center;
+}
+    .inner-div
+    {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+    }
+    .button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    /* Add button color classes if needed */
+    .Green {
+      background-color: green;
+      color: white;
+    }
+    .Pink {
+      background-color: pink;
+    }
+    .skyblue {
+      background-color: skyblue;
+    }
+    .yellow {
+      background-color: yellow;
+    }
+    .c64956 {
+      background-color: #c64956;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <h1>Color Changer</h1>
+  <div class="inner-div">
+    <button class="button Green" id="Green">Green</button>
+    <button class="button Pink" id="Pink">Pink</button>
+    <button class="button skyblue" id="skyblue">Skyblue</button>
+    <button class="button yellow" id="yellow">Yellow</button>
+    <button class="button c64956" id="c64956">Onion</button>
+  </div>
+
+  <script>
+    const buttons = document.querySelectorAll(".button");
+    const body = document.querySelector("body");
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', (e) => {
+        const color = e.target.id.toLowerCase();
+        const buttonColor = window.getComputedStyle(e.target).getPropertyValue('background-color');
+        
+        if (color === "green" || color === "pink" || color === "skyblue" || color === "yellow" || color === "c64956") {
+          body.style.backgroundColor = buttonColor;
+        }
+      });
+    });
+  </script>
+</body>
+</html>
